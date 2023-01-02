@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import EditableController from "./editable_controller"
 application.register("editable", EditableController)
+
+import FormatController from "./format_controller"
+application.register("format", FormatController)

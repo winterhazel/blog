@@ -1,5 +1,5 @@
 = turbo_frame_tag dom_id(fragment) do
-  div class="fragment #{fragment.element}" data-controller="editable" data-action="click->editable#click blur->editable#blur keydown->editable#keydown"
+  div class="fragment #{fragment.element}" data-controller="editable" data-action="click->editable#click blur->editable#blur keydown->editable#keydown mouseup->editable#mouseUp mousedown->editable#mouseDown"
     = fragment.render
     = form_with(url: fragment_path(fragment.id), method: :patch) do |f|
       = f.text_area(:data, hidden: true)
