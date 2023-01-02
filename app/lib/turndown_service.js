@@ -15,6 +15,22 @@ export function turndownService() {
         }
     })
 
+    // Strip '```' from pre
+    service.addRule("codeBlocks", {
+        filter: ['pre'],
+        replacement: function (content, node, options) {
+            return content
+        }
+    })
+
+    // Support strike through
+    service.addRule('strikethrough', {
+        filter: ['del', 's', 'strike'],
+        replacement: function (content) {
+            return '~~' + content + '~~'
+        }
+    });
+
     // Ignore <form></form> elements
     service.remove(['form'])
 
