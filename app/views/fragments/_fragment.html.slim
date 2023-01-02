@@ -4,3 +4,5 @@
     = form_with(url: fragment_path(fragment.id), method: :patch) do |f|
       = f.text_area(:data, hidden: true)
       = f.submit("Save", hidden: true)
+
+= render "fragments/new", fragment: fragment

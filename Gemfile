@@ -83,3 +83,7 @@ gem "slim-rails", "~> 3.5"
 gem "redcarpet", "~> 3.5"
 
 gem "rouge", "~> 4.0"
+
+gem "bulma-rails", "~> 0.9.4"
+
+gem "foreman", "~> 0.87.2"
