@@ -1,6 +1,6 @@
 require "test_helper"
 
-class FragmentTest < ActiveSupport::TestCase
+class ArticlesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

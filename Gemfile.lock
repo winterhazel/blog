@@ -66,8 +66,6 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    acts_as_list (1.0.4)
-      activerecord (>= 4.2)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     bindex (0.8.1)
@@ -100,6 +98,9 @@ GEM
       activesupport (>= 5.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
+    image_processing (1.12.2)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.17, < 3)
     io-console (0.6.0)
     irb (1.6.2)
       reline (>= 0.3.0)
@@ -119,6 +120,7 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
+    mini_magick (4.12.0)
     mini_mime (1.1.2)
     minitest (5.16.3)
     msgpack (1.6.0)
@@ -169,12 +171,12 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    redcarpet (3.5.1)
     regexp_parser (2.6.1)
     reline (0.3.2)
       io-console (~> 0.5)
     rexml (3.2.5)
-    rouge (4.0.1)
+    ruby-vips (2.1.4)
+      ffi (~> 1.12)
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -182,6 +184,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     slim (4.1.0)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
@@ -229,21 +234,20 @@ PLATFORMS
   x86_64-linux-gnu
 
 DEPENDENCIES
-  acts_as_list (~> 1.0)
   bootsnap
   bulma-rails (~> 0.9.4)
   capybara
   cssbundling-rails
   debug
   foreman (~> 0.87.2)
+  image_processing (~> 1.2)
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)
-  redcarpet (~> 3.5)
-  rouge (~> 4.0)
   selenium-webdriver
+  simple_form (~> 5.1)
   slim (~> 4.1)
   slim-rails (~> 3.5)
   sprockets-rails

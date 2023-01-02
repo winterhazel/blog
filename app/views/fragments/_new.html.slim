@@ -1,9 +1,0 @@
-div.add-fragment data-controller="add-fragment"
-  div.add-fragment-button-container
-    = form_with(model: Fragment.new(element: "p", data: "edit me", position: (fragment.position + 1))) do |f|
-      = f.text_field :element, hidden: true
-      = f.text_field :data, hidden: true
-      = f.text_field :meta, hidden: true
-      = f.text_field :position, hidden: true
-      button.button.is-light.is-round data-action="click->add-fragment#showMenu" +
-  hr.add-fragment-indicator

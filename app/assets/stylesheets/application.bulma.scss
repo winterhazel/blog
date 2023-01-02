@@ -37,11 +37,10 @@
 // @import "bulma/sass/layout/section.sass";
 
 @import 'bulma/bulma';
-@import 'tippy.js/dist/tippy';
 
+@import 'actiontext.css';
 @import "document";
-@import "fragment";
 
 html, body {
-    background-color: white;
+  background-color: white;
 }

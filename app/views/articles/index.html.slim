@@ -1,0 +1,5 @@
+div.container
+  p #{@articles.count} articles!
+  - @articles.each do |a|
+    = render "article_card", article: a
+  = link_to "New Article", new_article_path

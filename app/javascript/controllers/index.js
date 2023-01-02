@@ -3,12 +3,3 @@
 // ./bin/rails generate stimulus controllerName
 
 import { application } from "./application"
-
-import AddFragmentController from "./add_fragment_controller"
-application.register("add-fragment", AddFragmentController)
-
-import EditableController from "./editable_controller"
-application.register("editable", EditableController)
-
-import FormatController from "./format_controller"
-application.register("format", FormatController)
