@@ -1,8 +1,8 @@
 import {Controller} from "@hotwired/stimulus"
-import {turndownService} from "../../lib/turndown_service"
+import {turndownService} from "../lib/turndown_service"
 import rangy from "rangy"
 import "rangy/lib/rangy-textrange"
-import {show_format_selection_menu} from "../../lib/context_menus"
+import {show_format_selection_menu} from "../lib/context_menus"
 
 export default class extends Controller {
     click(event) {

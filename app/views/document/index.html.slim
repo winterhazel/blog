@@ -1,4 +1,5 @@
 section.section
   div.article.container
-    - @fragments.each do |fragment|
-      = render fragment
+    = turbo_frame_tag :fragments do
+      - @fragments.each do |fragment|
+        = render fragment
