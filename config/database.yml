@@ -20,16 +20,14 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
-development:
-  adapter: postgresql
-  pool: 5
-  # these are our new parameters
-  encoding: UTF-8
-  database: blog_development
   host: localhost
   username: blog
   password: blog_password
+
+
+development:
+  <<: *default
+  database: blog_development
 
 
 # Warning: The database defined as "test" will be erased and
