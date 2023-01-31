@@ -3,12 +3,17 @@
 // Import a Google Font
 // @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css');
+
 // Set your brand colors
 // $purple: #8A4D76;
 // $pink: #FA7C91;
 // $brown: #757763;
 // $beige-light: #D0D1CD;
 // $beige-lighter: #EFF0EB;
+
+$pink: #ea4aaa;
 
 // Update Bulma's global variables
 // $family-sans-serif: "Nunito", sans-serif;
@@ -18,6 +23,8 @@
 // $link: $pink;
 // $widescreen-enabled: false;
 // $fullhd-enabled: false;
+
+$family-sans-serif: "Nunito", sans-serif;
 
 // Update some of Bulma's component variables
 // $body-background-color: $beige-lighter;
@@ -40,6 +47,13 @@
 
 @import 'actiontext.css';
 @import "document";
+
+:root {
+  --email: #{$pink};
+  --github: #{$dark};
+  --rss: #{$orange};
+  --linkedin: #{$blue};
+}
 
 html, body {
   background-color: white;
