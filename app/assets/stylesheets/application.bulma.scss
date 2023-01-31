@@ -25,6 +25,7 @@ $pink: #ea4aaa;
 // $fullhd-enabled: false;
 
 $family-sans-serif: "Nunito", sans-serif;
+$widescreen-enabled: false;
 
 // Update some of Bulma's component variables
 // $body-background-color: $beige-lighter;
@@ -47,13 +48,6 @@ $family-sans-serif: "Nunito", sans-serif;
 
 @import 'actiontext.css';
 @import "document";
-
-:root {
-  --email: #{$pink};
-  --github: #{$dark};
-  --rss: #{$orange};
-  --linkedin: #{$blue};
-}
 
 html, body {
   background-color: white;

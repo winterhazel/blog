@@ -2,23 +2,15 @@ nav.navbar.has-shadow role="navigation" style="font-size: 1.125rem;"
   div.container
     div.navbar-menu
       div.navbar-start
-        div.navbar-item
-          div.buttons
-            a.button.is-white href="#{root_path}"
-              span.icon.has-text-primary
-                i.fas.fa-house-user
-              span Home
-            a.button.is-white href="#{articles_path}"
-              span.icon style="color: var(--rss);"
-                i.fas.fa-rss
-              span Blog
+        a.navbar-item href="#{root_path}" Home
+        a.navbar-item href="#{articles_path}" Blog
       div.navbar-end
         a.navbar-item href="mailto:fabricio.duarte.jr@gmail.com"
-          span.icon style="color: var(--email);"
+          span.icon
             i.fab.fas.fa-envelope
         a.navbar-item href="https://github.com/winterhazel"
-          span.icon style="color: var(--github);"
+          span.icon
             i.fab.fa-lg.fa-github-alt
         a.navbar-item href="https://www.linkedin.com/in/fabricio-duarte-junior/"
-          span.icon style="color: var(--linkedin);"
+          span.icon
             i.fab.fa-lg.fa-linkedin
